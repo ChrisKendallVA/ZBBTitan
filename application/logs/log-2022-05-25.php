@@ -1,0 +1,5 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2022-05-25 10:36:01 --> Query error: Unknown column 'taskid' in 'field list' - Invalid query: INSERT INTO `user_notifications` (`userid`, `url`, `timestamp`, `message`, `status`, `fromid`, `taskid`) VALUES ('3', 'tasks/view/150', 1653474961, 'is REMINDING you of a task:ricardomontisci', 0, '1', '150')
+ERROR - 2022-05-25 10:36:11 --> Query error: Unknown column 'taskid' in 'field list' - Invalid query: INSERT INTO `user_notifications` (`userid`, `url`, `timestamp`, `message`, `status`, `fromid`, `taskid`) VALUES ('3', 'tasks/view/149', 1653474971, 'is REMINDING you of a task:ricardomontisci', 0, '1', '149')
+ERROR - 2022-05-25 14:21:34 --> Query error: Unknown column 'taskid' in 'field list' - Invalid query: INSERT INTO `user_notifications` (`userid`, `url`, `timestamp`, `message`, `status`, `fromid`, `taskid`) VALUES ('2', 'tasks/view/117', 1653488494, 'is REMINDING you of a task:darrenwright', 0, '1', '117')

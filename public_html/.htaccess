@@ -1,0 +1,42 @@
+Options All -Indexes
+
+#DirectoryIndex index.php index.htm index.html
+
+RewriteEngine on
+RewriteBase /
+
+# Force HTTPS on the subdomains/subdirectories login or admin
+#RewriteCond %{HTTPS} off
+#RewriteCond %{HTTP_HOST} ^(login|admin)\. [NC]
+#RewriteCond %{REQUEST_URI} ^(login|admin)\. [NC,OR]
+#RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+
+ErrorDocument 403 "You are not authorised to view this portal."
+
+order deny,allow
+
+#Admin IP Range
+
+allow from 45.67.248.0
+allow from 45.67.248.1
+allow from 45.67.248.2
+allow from 45.67.248.3
+allow from 45.67.248.4
+allow from 45.67.248.5
+allow from 45.67.248.6
+allow from 45.67.248.7
+allow from 45.67.248.8
+allow from 45.67.248.9
+allow from 45.67.248.10
+allow from 45.67.248.11
+allow from 45.67.248.12
+allow from 45.67.248.13
+allow from 45.67.248.14
+allow from 45.67.248.15
+allow from 2a09:7e40::/32
+
+
+# Third party IP Range
+deny from all
+ 
