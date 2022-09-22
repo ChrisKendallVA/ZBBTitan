@@ -34,7 +34,7 @@
 </div>
     <?php if($this->common->has_permissions(array("admin", "project_admin", "task_manage", "task_worker"), 
       $this->user)) : ?>
-      <a href="<?php echo site_url("tasks/add?projectid=". $projectid) ?>" class="btn btn-primary btn-sm"><?php echo lang("ctn_821") ?></a>
+      Task ID: <?php echo $task->ID?> -  <a href="<?php echo site_url("tasks/add?projectid=". $projectid) ?>" class="btn btn-primary btn-sm"><?php echo lang("ctn_821") ?></a>
     <?php endif; ?>
 </div>
 </div>
