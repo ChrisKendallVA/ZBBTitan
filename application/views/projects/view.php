@@ -231,7 +231,7 @@ $(document).ready(function() {
                 "<'row'<'col-sm-5'i><'col-sm-7'p>>",
       "processing": false,
         "pagingType" : "full_numbers",
-        "pageLength" : 15,
+        "pageLength" : 100,
         "serverSide": true,
         "orderMulti": false,
         "order": [
