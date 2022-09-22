@@ -2,7 +2,7 @@
 
 <div class="db-header clearfix">
     <div class="page-header-title"> <span class="glyphicon glyphicon-folder-open"></span> <?php echo lang("ctn_766") ?></div>
-    <div class="db-header-extra form-inline"> 
+    <div class="db-header-extra form-inline">
 
       <div class="form-group has-feedback no-margin">
 <div class="input-group">
@@ -24,10 +24,10 @@
 </div>
 </div>
 
-<a href="<?php echo site_url("projects/".$page."/0") ?>" class="btn btn-round btn-sm"><?php echo lang("ctn_786") ?></a> 
+<a href="<?php echo site_url("projects/".$page."/0") ?>" class="btn btn-round btn-sm"><?php echo lang("ctn_786") ?></a>
 
 <?php foreach($categories->result() as $r) : ?>
-<a href="<?php echo site_url("projects/".$page."/" . $r->ID) ?>" class="btn btn-round btn-sm" style="border-color: #<?php echo $r->color ?>; color: #<?php echo $r->color ?>"><?php echo $r->name ?></a> 
+<a href="<?php echo site_url("projects/".$page."/" . $r->ID) ?>" class="btn btn-round btn-sm" style="border-color: #<?php echo $r->color ?>; color: #<?php echo $r->color ?>"><?php echo $r->name ?></a>
 <?php endforeach; ?>
 
 <hr>
@@ -35,6 +35,7 @@
 <div class="table-responsive">
 <table id="projects-table" class="table table-bordered table-striped table-hover">
 <thead>
+  Task ID: <?php echo $task->ID?> -  
 <tr class="table-header"><td width="50"><?php echo lang("ctn_734") ?></td><td><?php echo lang("ctn_767") ?></td><td><?php echo lang("ctn_775") ?></td><td><?php echo lang("ctn_703") ?></td><td><?php echo lang("ctn_771") ?></td><td><?php echo lang("ctn_52") ?></td></tr>
 </thead>
 <tbody>
@@ -175,19 +176,19 @@
 <script type="text/javascript">
 $(document).ready(function() {
 CKEDITOR.replace('project-description', { height: '100'});
- 
+
 });
 
 </script>
 <?php endif; ?>
 <script type="text/javascript">
-$(document).ready(function() {   
+$(document).ready(function() {
 $('#addModal').on('shown.bs.modal', function () {
   $(".chosen-select-no-single").chosen({
     disable_search_threshold:10
 });
 });
-    
+
 
     var st = $('#search_type').val();
 
@@ -231,10 +232,10 @@ $('#addModal').on('shown.bs.modal', function () {
 });
 
 } );
-function change_search(search) 
+function change_search(search)
     {
       var options = [
-        "search-like", 
+        "search-like",
         "search-exact",
         "title-exact",
       ];
@@ -243,7 +244,7 @@ function change_search(search)
         $( "#form-search-input" ).trigger( "change" );
     }
 
-function set_search_icon(icon, options) 
+function set_search_icon(icon, options)
     {
       for(var i = 0; i<options.length;i++) {
         if(options[i] == icon) {
